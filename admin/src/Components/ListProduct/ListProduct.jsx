@@ -3,7 +3,7 @@ import "./ListProduct.css";
 import cross_icon from "../../assets/cross_icon.png"; // Ensure the path to assets is correct
 import axios from "axios";
 
-const URL = process.env.BASE_URL;
+const URL = "13.60.34.70";
 
 const ListProduct = () => {
   const [allProducts, setAllProducts] = useState([]);

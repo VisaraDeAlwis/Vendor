@@ -1,0 +1,121 @@
+/* Container for the shop */
+.shop-container {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+/* Title styling */
+.shop-container h1 {
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Products grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 products per row */
+  gap: 30px; /* Space between products */
+  margin: 0 auto; /* Center the grid */
+  max-width: 1200px; /* Limit the max width */
+}
+
+/* Individual product item */
+.item {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 15px; /* More rounded corners */
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+}
+
+/* Product image */
+.item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.item:hover img {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Product name */
+.item p {
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+/* Product prices */
+.item-prices {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item-price-new {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.item-price-old {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 16px;
+}
+
+/* Add to Cart button */
+.add-to-cart-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #47331f;
+  color: white;
+  border: none;
+  border-radius: 0px 40px 0px 40px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #aa8f44; /* Darker pink on hover */
+  transform: translateY(-3px); /* Button lift effect */
+}
+
+/* Responsive: For smaller screens, reduce to 2 products per row */
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive: For mobile screens, reduce to 1 product per row */
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    padding: 15px;
+  }
+
+  .item img {
+    border-radius: 8px;
+  }
+}

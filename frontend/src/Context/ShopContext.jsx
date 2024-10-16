@@ -3,7 +3,7 @@ import React, { createContext, useEffect, useState } from "react";
 // Create the context
 export const ShopContext = createContext(null);
 
-const URL = "16.171.170.5";
+const URL = process.env.BASE_URL;
 
 const ShopContextProvider = (props) => {
   const [all_product, setAll_Product] = useState([]);

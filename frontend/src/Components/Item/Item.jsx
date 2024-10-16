@@ -45,7 +45,6 @@ const Item = ({ id, name, image, price, initialQuantity }) => {
       <p>{name}</p>
       <div className="item-prices">
         <div className="item-price-new">Rs.{price}</div>
-        <div className="item-quantity">Quantity left: {quantity}</div> {/* Display remaining quantity */}
       </div>
       <button
         className="add-to-cart-btn"
@@ -53,7 +52,7 @@ const Item = ({ id, name, image, price, initialQuantity }) => {
         disabled={quantity === 0} // Disable if out of stock
       >
         <img src={cart_icon} alt="Cart Icon" />
-        {quantity === 0 ? "Out of Stock" : "Add to Cart"} {/* Change label based on quantity */}
+        {quantity === 0 ? "Out of Stock" : "Buy Now"} {/* Change label based on quantity */}
       </button>
     </div>
   );

@@ -16,6 +16,7 @@ services:
     environment:
       SERVER_URL: http://localhost:3000
       STRIPE_PRIVATE_KEY: sk_test_51Q5KYbKwudlSVdJSZaPlgGBDkSFJQY5vsX09uCLyJfTRUaqpv31Nm5brqqOM81L6fPLEShQpJygoWwixH3dDuGCY00YANqrw64
+      URL: 16.171.170.5
     depends_on:
       - mongo_db
 

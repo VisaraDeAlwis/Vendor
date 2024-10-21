@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Item.css"; // Link to CSS
 import cart_icon from "../Assets/cart_icon.png"; // Adjust path accordingly
 
-const URL = process.env.BASE_URL;
+const URL = "13.60.205.166";
 
 const Item = ({ id, name, image, price, initialQuantity }) => {
   const [quantity, setQuantity] = useState(initialQuantity); // Track quantity state

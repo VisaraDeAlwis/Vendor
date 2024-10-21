@@ -9,7 +9,7 @@ require("dotenv").config();
 app.use(express.static("public"));
 
 app.use(express.json());
-app.use(corscors({ origin: '*' }));
+app.use(cors({ origin: '*' }));
 
 const URL = "13.60.205.166";
 

@@ -1,6 +1,6 @@
 const button = document.querySelector("button")
 button.addEventListener("click", () => {
-  fetch("http://localhost:3000/create-checkout-session", {
+  fetch("http://13.60.205.166:3000/create-checkout-session", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

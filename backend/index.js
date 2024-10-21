@@ -9,9 +9,9 @@ require("dotenv").config();
 app.use(express.static("public"));
 
 app.use(express.json());
-app.use(cors());
+app.use(corscors({ origin: '*' }));
 
-const URL = process.env.URL;
+const URL = "13.60.205.166";
 
 // Database connection with MongoDB
 mongoose.connect(

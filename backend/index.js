@@ -11,7 +11,7 @@ app.use(express.static("public"));
 app.use(express.json());
 app.use(cors({ origin: '*' }));
 
-const URL = "13.60.205.166";
+const URL = "13.60.188.149";
 
 // Database connection with MongoDB
 mongoose.connect(
